@@ -11,96 +11,114 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/style/style.css">
-  <title>Jantar</title>
+  <title>Healthy Food</title>
 </head>
 
 <body>
+  <!-- MENU DE OPÇÕES -->
+  <nav class="navbar col-12 fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
+    <div class="container-fluid col-11">
+      <div class="logo">
+        <img src="/img/logo.png" height="80px">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-center fs-5" href="/index.html">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pratos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/src/cafe.html">Café da Manhã</a></li>
+              <li><a class="dropdown-item" href="/src/almoco.html">Almoço</a></li>
+              <li><a class="dropdown-item" href="/src/jantar.html">Jantar</a></li>
+              <li><a class="dropdown-item" href="/src/lanchinhos.html">Lanchinhos</a></li>
+              <li><a class="dropdown-item" href="/src/sobremesas.html">Sobremesas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center fs-5" href="/src/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Mais
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/src/intoleranciaG.html">Intolerância Glúten</a></li>
+              <li><a class="dropdown-item" href="/src/intoleranciaL.html">Intolerância Lactose</a></li>
+              <li><a class="dropdown-item" href="/src/dicaBonus.html">Restaurantes Próximos</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-    <!-- MENU DE OPÇÕES -->
-    <nav class="navbar col-12 position-fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
-        <div class="container-fluid col-11">
-            <button class="logo">
-                <a href="index.html"><img src="/img/logo.png" height="80px"></a>
-            </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Início</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Receitas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="src/cafe.html">Café da manhã</a></li>
-                            <li><a class="dropdown-item" href="src/almoco.html">Almoço</a></li>
-                            <li><a class="dropdown-item" href="src/lanches.html">Lanchinhos</a></li>
-                            <li><a class="dropdown-item" href="src/jantar.html">Jantar</a></li>
-                            <li><a class="dropdown-item" href="src/sobremesas.html">Sobremesas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="src/sobreNos.html">Sobre</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mais
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="...">pag1</a></li>
-                            <li><a class="dropdown-item" href="...">pag2</a></li>
-                            <li><a class="dropdown-item" href="...">pag3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Procurar..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
+  <!-- AREA DE CONTEUDO -->
+  <div class="mb-5 col-10 offset-1 text-center">
     <h1>Jantar</h1>
+  </div>
 
-    <p>
-        <b>14. Nhoque de batata doce:</b> diferente do nhoque tradicional, este leva batata doce na receita, ideal para
-        quem busca uma dieta com carboidratos de absorção lenta, o que proporciona mais saciedade.
-    </p>
+  <div class="mb-3 col-10 offset-1 text-justify">
 
-    <p>
-        <b>15. Pizza com massa de frango:</b> essa pizza maravilhosa é feita com massa de frango desfiado e pode ser
-        recheada como você desejar. Se preferir, substitua a mussarela por outro queijo mais leve.
-    </p>
+    <div class="container">
+      <img src="/img/nhoque.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>14. Nhoque de batata doce:</strong> diferente do nhoque tradicional, este leva batata doce na
+          receita, ideal para quem busca uma dieta com carboidratos de absorção lenta, o que proporciona mais
+          saciedade.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/pizza.webp" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>15. Pizza com massa de frango:</strong> essa pizza maravilhosa é feita com massa de frango desfiado e
+          pode ser recheada como você desejar. Se preferir, substitua a mussarela por outro queijo mais leve.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/kibe-sem-gluten.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>16. Kibe sem glúten:</strong> essa receita de kibe traz o arroz integral no lugar do trigo,
+          execelente substituição para os celíacos que não abrem mão dessa delícia do oriente médio.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/spaghetti-legumes.JPG" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>17. Spaghetti de legumes:</strong> esse spaghetti é diferente pois sua massa é feita de legumes,
+          sendo livre de glúten. Porém, para fazê-lo, é necessário ter um espiralizador de legumes. Confira a receita
+          e experimente.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/hamburguer-quinoa.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>18. Hamburguer de quinoa:</strong> outro substituto para o trigo é a quinoa. Além de ser um prato
+          saudável, é rápido e fazer e serve até 4 pessoas.</p>
+      </div>
+    </div>
 
-    <p>
-        <b>16. Kibe sem glúten:</b> essa receita de kibe traz o arroz integral no lugar do trigo, execelente
-        substituição para os celíacos que não abrem mão dessa delícia do oriente médio.
-    </p>
+  </div>
 
-    <p>
-        <b>17. Spaghetti de legumes:</b> esse spaghetti é diferente pois sua massa é feita de legumes, sendo livre de
-        glúten. Porém, para fazê-lo, é necessário ter um espiralizador de legumes. Confira a receita e experimente.
-    </p>
-
-    <p>
-        <b>18. Hamburguer de quinoa:</b> outro substituto para o trigo é a quinoa. Além de ser um prato saudável, é
-        rápido e fazer e serve até 4 pessoas.
-    </p>
-
-    <!-- RODAPÉ SIMPLES -->
-    <footer class="page-footer font-small p-5 footer">
-        <div class="text-center">
-            © 2023 - Healthy Food - Todos os direitos reservados
-        </div>
-    </footer>
+  <!-- RODAPÉ SIMPLES -->
+  <footer class="page-footer font-small p-5 footer">
+    <div class="text-center">
+      © 2023 - Healthy Food - Todos os direitos reservados
+    </div>
+  </footer>
 
 </body>
 

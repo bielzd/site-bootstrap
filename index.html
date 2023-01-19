@@ -16,43 +16,45 @@
 
 <body>
   <!-- MENU DE OPÇÕES -->
-  <nav class="navbar col-12 position-fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
+  <nav class="navbar col-12 fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
     <div class="container-fluid col-11">
-      <button class="logo">
-        <a href="index.html"><img src="/img/logo.png" height="80px"></a>
-      </button>
+      <div class="logo">
+        <img src="/img/logo.png" height="80px">
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Início</a>
+            <a class="nav-link text-center fs-5" href="/index.html">Início</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Receitas
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pratos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="src/cafe.html">Café da manhã</a></li>
-              <li><a class="dropdown-item" href="src/almoco.html">Almoço</a></li>
-              <li><a class="dropdown-item" href="src/lanches.html">Lanchinhos</a></li>
-              <li><a class="dropdown-item" href="src/jantar.html">Jantar</a></li>
-              <li><a class="dropdown-item" href="src/sobremesas.html">Sobremesas</a></li>
+              <li><a class="dropdown-item" href="/src/cafe.html">Café da Manhã</a></li>
+              <li><a class="dropdown-item" href="/src/almoco.html">Almoço</a></li>
+              <li><a class="dropdown-item" href="/src/jantar.html">Jantar</a></li>
+              <li><a class="dropdown-item" href="/src/lanchinhos.html">Lanchinhos</a></li>
+              <li><a class="dropdown-item" href="/src/sobremesas.html">Sobremesas</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="src/sobreNos.html">Sobre</a>
+            <a class="nav-link text-center fs-5" href="/src/sobre.html">Sobre</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Mais
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="...">pag1</a></li>
-              <li><a class="dropdown-item" href="...">pag2</a></li>
-              <li><a class="dropdown-item" href="...">pag3</a></li>
+              <li><a class="dropdown-item" href="/src/intoleranciaG.html">Intolerância Glúten</a></li>
+              <li><a class="dropdown-item" href="/src/intoleranciaL.html">Intolerância Lactose</a></li>
+              <li><a class="dropdown-item" href="/src/dicaBonus.html">Restaurantes Próximos</a></li>
             </ul>
           </li>
         </ul>
@@ -64,19 +66,17 @@
     </div>
   </nav>
 
-  <!-- ADICIONAR TEXTO CENTRAL -->
-
   <!-- CAROUSEL DE SLIDES -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade container-sm mt-5 mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/slide1.jpg" class="d-block w-100 rounded-2" alt="Refeição">
+        <img src="/img/slide1.jpg" class="d-block w-100 rounded-3" alt="Refeição">
       </div>
       <div class="carousel-item">
-        <img src="/img/slide2.jpg" class="d-block w-100" alt="Kiwi">
+        <img src="/img/slide2.png" class="d-block w-100 rounded-3" alt="Kiwi">
       </div>
       <div class="carousel-item">
-        <img src="/img/slide3.jpg" class="d-block w-100" alt="Legumes">
+        <img src="/img/slide3.png" class="d-block w-100 rounded-3" alt="Legumes">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -89,53 +89,58 @@
     </button>
   </div>
 
+  <!-- TEXTO CENTRAL -->
+  <p class="col-10 offset-1 mb-3 text-center">Este site foi pensado e desenvolvido visando proporcionar uma
+    <strong>variedade de pratos</strong> para as
+    pessoas com <strong>intolerância alimentar</strong>. Como, por exemplo, as pessoas com intolerância a
+    <strong>lactose</strong> e ao <strong>glúten</strong>.
+    Existem diversas pessoas pelo mundo que <strong>passam por isso</strong>, mas não tem muitas <strong>opções
+      alimentares</strong> para colocar em <strong>sua rotina</strong>, já que a maioria dos alimentos que consumimos
+    hoje, tem glúten ou <strong>derivados de leite</strong>.
+    Neste site, você vai encontrar <strong>receitas novas</strong> e algumas substituições de clássicos da
+    <strong>culinária brasileira e estrangeira</strong>, além de trazer mais informação de como lidar com essa
+    restrição.
+  </p>
+
+  <div>
+    <img src="/img/animated_crop.webp" class="imgPag img-fluid">
+  </div>
+
   <!-- SUBTITLE -->
-  <div class="mb-3">
+  <div class="mb-3 col-10 offset-1">
     <h2 style="text-align: center;">Conheça <b>diversas opções</b> para enriquecer seu cardápio e variar os seus pratos
       gluten-free <b>durante a semana!</b></h2>
   </div>
 
   <!-- GRID DE RECEITAS -->
-  <div class="row row-cols-1 row-cols-md-2 g-4 col-10 m-auto mb-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4 col-10 m-auto mb-5">
     <div class="col">
       <div class="card">
-        <img src="/img/receita1.webp" class="card-img-top" alt="...">
+        <img src="/img/cafedamanha.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Café da manhã</h5>
-          <p class="card-text">Para o café, crepioca de cacau, pão de linhaça, pãezinhos de abóbora, e muito mais.</p>
-          <a href="src/cafe.html" class="btn btn-success">Clique aqui e saiba mais!</a>
+          <p class="card-text">Opções rápidas e nutritivas de café da manhã para você começar bem o seu dia.</p>
+          <a href="src/cafe.html" class="btn btn-success">Clique aqui e confira!</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="/img/receita2.webp" class="card-img-top" alt="...">
+        <img src="/img/almoco.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Almoço</h5>
-          <p class="card-text">Para o almoço, bifes de frango com tomate e hortelã, strogonoff sem glúten e sem leite,
-            quibe de couve flor, etc.</p>
-          <a href="src/almoco.html" class="btn btn-success">Clique aqui e saiba mais!</a>
+          <p class="card-text">Cansou de comer sempre as mesmas coisas no almoço? Veja agora algumas opções para encaixar na sua rotina alimentar.</p>
+          <a href="src/almoco.html" class="btn btn-success">Clique aqui e confira!</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="/img/receita3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Lanchinhos</h5>
-          <p class="card-text">No lanche da tarde, bolo de cenoura, chips de batata doce, biscoito de polvilho, etc.</p>
-          <a href="src/lanches.html" class="btn btn-success">Clique aqui e saiba mais!</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="/img/receita4.webp" class="card-img-top" alt="...">
+        <img src="/img/jantar.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Jantar</h5>
-          <p class="card-text">E no jantar, pizza com massa de frango, spaghetti de legumes ou até mesmo hamburguer de
-            quinoa.</p>
-          <a href="src/jantar.html" class="btn btn-success">Clique aqui e saiba mais!</a>
+          <p class="card-text">Anoiteceu e você esta sem ideia do que comer na janta? Nós temos a solução para o seu problema.</p>
+          <a href="src/jantar.html" class="btn btn-success">Clique aqui e confira!</a>
         </div>
       </div>
     </div>

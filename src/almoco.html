@@ -11,98 +11,115 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/style/style.css">
-  <title>Almoço</title>
+  <title>Healthy Food</title>
 </head>
 
 <body>
+  <!-- MENU DE OPÇÕES -->
+  <nav class="navbar col-12 fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
+    <div class="container-fluid col-11">
+      <div class="logo">
+        <img src="/img/logo.png" height="80px">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-center fs-5" href="/index.html">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pratos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/src/cafe.html">Café da Manhã</a></li>
+              <li><a class="dropdown-item" href="/src/almoco.html">Almoço</a></li>
+              <li><a class="dropdown-item" href="/src/jantar.html">Jantar</a></li>
+              <li><a class="dropdown-item" href="/src/lanchinhos.html">Lanchinhos</a></li>
+              <li><a class="dropdown-item" href="/src/sobremesas.html">Sobremesas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center fs-5" href="/src/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Mais
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/src/intoleranciaG.html">Intolerância Glúten</a></li>
+              <li><a class="dropdown-item" href="/src/intoleranciaL.html">Intolerância Lactose</a></li>
+              <li><a class="dropdown-item" href="/src/dicaBonus.html">Restaurantes Próximos</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-    <!-- MENU DE OPÇÕES -->
-    <nav class="navbar col-12 position-fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
-        <div class="container-fluid col-11">
-            <button class="logo">
-                <a href="index.html"><img src="/img/logo.png" height="80px"></a>
-            </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Início</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Receitas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="src/cafe.html">Café da manhã</a></li>
-                            <li><a class="dropdown-item" href="src/almoco.html">Almoço</a></li>
-                            <li><a class="dropdown-item" href="src/lanches.html">Lanchinhos</a></li>
-                            <li><a class="dropdown-item" href="src/jantar.html">Jantar</a></li>
-                            <li><a class="dropdown-item" href="src/sobremesas.html">Sobremesas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="src/sobreNos.html">Sobre</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mais
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="...">pag1</a></li>
-                            <li><a class="dropdown-item" href="...">pag2</a></li>
-                            <li><a class="dropdown-item" href="...">pag3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Procurar..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
+  <!-- AREA DE CONTEUDO -->
+  <div class="mb-5 col-10 offset-1 text-center">
     <h1>Almoço</h1>
+  </div>
 
-    <p>
-        <b>4. Salada quente:</b> outra opção deliciosa para o seu almoço gluten-free é a saladinha de grão de bico
-        servida com espinafre.
-    </p>
+  <div class="mb-3 col-10 offset-1 text-justify">
 
-    <p>
-        <b>5. Bifes de frango com tomate e hortelã:</b> essa carne é fácil de preparar e cai bem com todo tipo de
-        salada. Para acompanhar, sirva arroz ou spaghetti sem glúten.
-    </p>
+    <div class="container">
+      <img src="/img/salada-quente.webp" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>4. Salada quente:</strong> outra opção deliciosa para o seu almoço gluten-free é a saladinha de grão
+          de bico servida com espinafre.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/bifes-frango.webp" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>5. Bifes de frango com tomate e hortelã:</strong> essa carne é fácil de preparar e cai bem com todo
+          tipo de salada. Para acompanhar, sirva arroz ou spaghetti sem glúten.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/strogonoff.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>6. Strogonoff sem glúten e sem leite:</strong> essa receita é sensacional. Você pode aproveitar o que
+          o strogonoff tem de melhor, porque além de ser um prato livre de glúten, você pode fazê-lo também sem
+          lactose. Se desejar, adicione batata palha para decorar e dar mais sabor ao prato.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/fusilli.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>7. Fusili sem glúten:</strong> prepare seu macarrão sem glúten com um delicioso molho de ricota e
+          abobrinha para o almoço. A grande vantagem desse prato é que ele pode ser servido tanto quente quanto frio.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/quibe-couve.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>8. Quibe de couve flor:</strong> com uma bela mistura de quinoa no lugar do trigo e arroz de couve
+          flor, esse quibe adaptado é um ótimo substituto para quem ama essa receita, mas não pode consumir glúten.
+          Vale a pena experimentar.</p>
+      </div>
+    </div>
 
-    <p>
-        <b>6. Strogonoff sem glúten e sem leite:</b> essa receita é sensacional. Você pode aproveitar o que o strogonoff
-        tem de melhor, porque além de ser um prato livre de glúten, você pode fazê-lo também sem lactose. Se desejar,
-        adicione batata palha para decorar e dar mais sabor ao prato.
-    </p>
+  </div>
 
-    <p>
-        <b>7. Fusili sem glúten:</b> prepare seu macarrão sem glúten com um delicioso molho de ricota e abobrinha para o
-        almoço. A grande vantagem desse prato é que ele pode ser servido tanto quente quanto frio.
-    </p>
-
-    <p>
-        <b>8. Quibe de couve flor:</b> com uma bela mistura de quinoa no lugar do trigo e arroz de couve flor, esse
-        quibe adaptado é um ótimo substituto para quem ama essa receita, mas não pode consumir glúten. Vale a pena
-        experimentar.
-    </p>
-
-    <!-- RODAPÉ SIMPLES -->
-    <footer class="page-footer font-small p-5 footer">
-        <div class="text-center">
-            © 2023 - Healthy Food - Todos os direitos reservados
-        </div>
-    </footer>
+  <!-- RODAPÉ SIMPLES -->
+  <footer class="page-footer font-small p-5 footer">
+    <div class="text-center">
+      © 2023 - Healthy Food - Todos os direitos reservados
+    </div>
+  </footer>
 
 </body>
 

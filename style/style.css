@@ -1,13 +1,58 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    padding-top: 100px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.texto{
+    margin-left: 20px;
+}
+
 .logo{
     border: none;
     background-color: transparent;
 }
 
-body{
-    /* background-color: rgb(204, 204, 149); */
+.text-justify{
+    text-align: justify;
 }
 
 .footer{
     background-color: #f8f9fa;
+    position: sticky;
+    top: calc(100%);
 }
 
+.imgPag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+@media (max-width: 1000px){
+    .container{
+        display: block;
+    }
+    .img-thumbnail{
+        margin: auto;
+        display: block;
+        width: 60%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}

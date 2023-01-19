@@ -15,90 +15,104 @@
 </head>
 
 <body>
+  <!-- MENU DE OPÇÕES -->
+  <nav class="navbar col-12 fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
+    <div class="container-fluid col-11">
+      <div class="logo">
+        <img src="/img/logo.png" height="80px">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-center fs-5" href="/index.html">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pratos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/src/cafe.html">Café da Manhã</a></li>
+              <li><a class="dropdown-item" href="/src/almoco.html">Almoço</a></li>
+              <li><a class="dropdown-item" href="/src/jantar.html">Jantar</a></li>
+              <li><a class="dropdown-item" href="/src/lanchinhos.html">Lanchinhos</a></li>
+              <li><a class="dropdown-item" href="/src/sobremesas.html">Sobremesas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center fs-5" href="/src/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Mais
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/src/intoleranciaG.html">Intolerância Glúten</a></li>
+              <li><a class="dropdown-item" href="/src/intoleranciaL.html">Intolerância Lactose</a></li>
+              <li><a class="dropdown-item" href="/src/dicaBonus.html">Restaurantes Próximos</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-    <!-- MENU DE OPÇÕES -->
-    <nav class="navbar col-12 position-fixed-top navbar-expand-lg bg-light" style="z-index: 999;">
-        <div class="container-fluid col-11">
-            <button class="logo">
-                <a href="index.html"><img src="/img/logo.png" height="80px"></a>
-            </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Início</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Receitas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="src/cafe.html">Café da manhã</a></li>
-                            <li><a class="dropdown-item" href="src/almoco.html">Almoço</a></li>
-                            <li><a class="dropdown-item" href="src/lanches.html">Lanchinhos</a></li>
-                            <li><a class="dropdown-item" href="src/jantar.html">Jantar</a></li>
-                            <li><a class="dropdown-item" href="src/sobremesas.html">Sobremesas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="src/sobreNos.html">Sobre</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mais
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="...">pag1</a></li>
-                            <li><a class="dropdown-item" href="...">pag2</a></li>
-                            <li><a class="dropdown-item" href="...">pag3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Procurar..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
+  <!-- AREA DE CONTEUDO -->
+  <div class="mb-5 col-10 offset-1 text-center">
     <h1>Sobremesas</h1>
+  </div>
 
-    <img src="/img/sobremesas-sem-gluten.jpg" alt="Bolo">
+  <div class="mb-3 col-10 offset-1 text-justify">
 
-    <p>
-        <b>19. Bolo de maçã e canela:</b> a receita perfeita para uma tarde de domingo leva farinha sem glúten para que
-        você possa comer sem medo! A mistura de canela e maçã dá ao bolo um sabor incrível que merece uma chance no seu
-        cardápio.
-    </p>
+    <div class="container">
+      <img src="/img/bolo-maca.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>19. Bolo de ma&ccedil;&atilde; e canela:</strong>&nbsp;a receita perfeita para uma tarde de domingo
+          leva farinha sem gl&uacute;ten para que voc&ecirc; possa comer sem medo! A mistura de canela e
+          ma&ccedil;&atilde; d&aacute; ao bolo um sabor incr&iacute;vel que merece uma chance no seu card&aacute;pio.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/musse-cupuacu.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>20. Mousse de cupua&ccedil;u:</strong>&nbsp;esque&ccedil;a os tradicionais mousses de chocolate,
+          lim&atilde;o ou maracuj&aacute; e opte por um sabor bem brasileirinho.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/pudim-manga.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>21. Pudim de manga e chia:</strong>&nbsp;outra receita bem brasileira, gluten-free e saud&aacute;vel
+          que vai deixar qualquer um impressionado com seus dotes culin&aacute;rios.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/img/creme-abacate.jpg" width="30%" class="img-thumbnail img-fluid">
+      <div class="texto">
+        <p><strong>22. Creme de abacate com coco, castanhas e frutas secas:</strong>&nbsp;o prato &eacute; ideal para
+          dias quentes, pois &eacute; fresquinho. Al&eacute;m disso, &eacute; f&aacute;cil e r&aacute;pido de fazer.
+        </p>
+      </div>
+    </div>
 
-    <p>
-        <b>20. Mousse de cupuaçu:</b> esqueça os tradicionais mousses de chocolate, limão ou maracujá e opte por um
-        sabor bem brasileirinho.
-    </p>
+  </div>
 
-    <p>
-        <b>21. Pudim de manga e chia:</b> outra receita bem brasileira, gluten-free e saudável que vai deixar qualquer
-        um impressionado com seus dotes culinários.
-    </p>
-
-    <p>
-        <b>22. Creme de abacate com coco, castanhas e frutas secas:</b> o prato é ideal para dias quentes, pois é
-        fresquinho. Além disso, é fácil e rápido de fazer.
-    </p>
-
-    <!-- RODAPÉ SIMPLES -->
-    <footer class="page-footer font-small p-5 footer">
-        <div class="text-center">
-            © 2023 - Healthy Food - Todos os direitos reservados
-        </div>
-    </footer>
+  <!-- RODAPÉ SIMPLES -->
+  <footer class="page-footer font-small p-5 footer">
+    <div class="text-center">
+      © 2023 - Healthy Food - Todos os direitos reservados
+    </div>
+  </footer>
 
 </body>
 
